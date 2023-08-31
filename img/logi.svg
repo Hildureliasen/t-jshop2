@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.15 13.01">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #231f20;
+        font-family: JosefinSansRoman-Light, 'Josefin Sans';
+        font-variation-settings: 'wght' 300;
+        font-weight: 300;
+      }
+
+      .cls-2 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        font-family: JosefinSansRoman-Bold, 'Josefin Sans';
+        font-variation-settings: 'wght' 700;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        font-size: 12px;
+      }
+    </style>
+  </defs>
+  <text class="cls-5" transform="translate(0 10.21)"><tspan class="cls-2" x="0" y="0">F</tspan><tspan class="cls-3" x="6.12" y="0">ashion</tspan><tspan class="cls-4" x="38.46" y="0">R</tspan><tspan class="cls-1" x="46.69" y="0">US</tspan></text>
+</svg>
