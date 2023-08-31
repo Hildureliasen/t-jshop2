@@ -17,6 +17,21 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+/*********** index ************/
+.link_productliste {
+  margin-top: 42px;
+  margin-left: 4%;
+  margin-right: 4%;
+  background-color: #908994;
+  padding: 12%;
+  border-radius: 6%/20%;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 20px;
+}
+
 /******** navigation *********/
 .navbar {
   color: #fff;
@@ -62,48 +77,11 @@ header {
   text-align: center;
   padding: 20px;
 }
-/* 
-.kategori-list {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 60px;
-  display: flex;
-  justify-content: center;
-}
-
-.kategori-list ul {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  display: grid;
-  gap: 7%;
-  list-style: none;
-  padding: 0;
-  margin-left: -15%;
-}
-
-.kategori-list li {
-  margin: 10px 0;
-}
-
-.kategori-list a {
-  text-decoration: none;
-  color: #333;
-  display: inline-block;
-  padding: 20px 70px;
-  background-color: #f5eeee;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.kategori-list a:hover {
-  background-color: #ccc;
-  color: #000;
-} */
 
 /****** GRID til category side ********/
 
-.category {
-  margin-top: 3%;
+.category_link {
+  margin-top: 42px;
   margin-left: 4%;
   margin-right: 4%;
   background-color: #908994;
@@ -118,9 +96,9 @@ header {
 
 .categorylist {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-  padding-left: 9%;
-  padding-right: 9%;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .category:hover {
@@ -206,6 +184,15 @@ main :not(.category) {
   justify-content: center;
 } */
 
+.productliste_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 220px);
+  gap: 7%;
+  margin: auto;
+  margin-top: 10%;
+  justify-content: center;
+}
+
 .main :not(.categorylist) {
   max-width: 1200px;
   margin: 0 auto;
@@ -224,7 +211,8 @@ main :not(.category) {
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
-  margin: 10%;
+  /* margin: 10%; */
+  width: 110%;
 }
 
 .Product:hover {
@@ -267,18 +255,18 @@ main :not(.category) {
   border-radius: 5px;
 }
 
-.read-more {
+.read_more {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 30px;
   text-decoration: none;
   background-color: #483b6c;
   color: #fff;
-  padding: 5px 10px;
+  padding: 10px 22px;
   border-radius: 5px;
 }
 
-.read-more:hover {
-  background-color: #555;
+.read_more:hover {
+  background-color: #9782a5;
 }
 
 /* Responsive Grid */
@@ -291,4 +279,10 @@ main :not(.category) {
   }
 }
 
-/***** produkliste *******/
+/***** produktside *******/
+
+.product_grid {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}

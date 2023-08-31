@@ -14,8 +14,8 @@ function showCategory(oneCategory) {
   //lav en kopi
   const copy = template.cloneNode(true);
 
-  copy.querySelector(".category").textContent = oneCategory.category;
-  copy.querySelector(".category").href = `produktliste.html?category=${oneCategory.category}`;
+  copy.querySelector(".category_link").textContent = oneCategory.category;
+  copy.querySelector(".category_link").href = `produktliste.html?category=${oneCategory.category}`;
 
   //appende
   document.querySelector("main").appendChild(copy);

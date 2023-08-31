@@ -47,7 +47,7 @@ function showProduct(product) {
   if (product.soldout) {
     copy.querySelector(".soldOut2").classList.add("soldOut");
   }
-  copy.querySelector(".read_more").setAttribute("href", `produkt.html?id=${product.id}`);
+  copy.querySelector(".read_more").setAttribute("href", `product.html?id=${product.id}`);
   document.querySelector("main").appendChild(copy);
 }
 
