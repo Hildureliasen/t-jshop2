@@ -103,14 +103,11 @@ header {
 /****** GRID til category side ********/
 
 .category {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px;
-  margin: 5%;
+  margin-top: 3%;
+  margin-left: 4%;
+  margin-right: 4%;
   background-color: #908994;
-  padding: 14%;
-  text-decoration: none;
-  color: #ffffff;
+  padding: 12%;
   border-radius: 6%/20%;
   text-align: center;
   color: white;
@@ -120,9 +117,10 @@ header {
 }
 
 .categorylist {
-  margin-top: -20%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  padding-left: 9%;
+  padding-right: 9%;
 }
 
 .category:hover {
