@@ -8,8 +8,12 @@ a {
   padding: 0;
 }
 
+h2 {
+  text-align: center;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: rgb(255, 255, 255);
 }
 
@@ -17,6 +21,10 @@ body {
 .navbar {
   color: #fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
 }
 
 .nav-list {
@@ -42,12 +50,8 @@ body {
 }
 
 .logo {
-  padding: 5px;
-}
-
-.logo-image {
-  width: 100%; /* Adjust the width as needed */
-  height: auto;
+  /* padding: 5px; */
+  width: 200px;
 }
 
 /******** kategori *********/
@@ -99,6 +103,10 @@ header {
 /****** GRID til category side ********/
 
 .category {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  margin: 5%;
   background-color: #908994;
   padding: 14%;
   text-decoration: none;
@@ -112,15 +120,21 @@ header {
 }
 
 .categorylist {
+  margin-top: -20%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px;
-  margin: 5%;
 }
-.price span {
+
+.category:hover {
+  background-color: #44424c;
+  color: rgb(232, 232, 232);
+}
+
+/****************** produktliste ***************/
+/* .price span {
   color: hotpink;
 }
-img {
+img :not(.logo) {
   width: 20vw;
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -134,8 +148,7 @@ img {
   background-color: red;
 }
 
-/*  GRID ****/
-main {
+main :not(.category) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   grid-gap: 20px;
@@ -183,6 +196,101 @@ main {
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
+} */
+
+/* .main :not(.category) {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+} */
+
+.main :not(.categorylist) {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.Product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin: 10%;
+}
+
+.Product:hover {
+  transform: translateY(-5px);
+}
+
+.Product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.Product h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.Product p.subtle {
+  color: #666;
+  font-size: 14px;
+}
+
+.price {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.discounted {
+  color: red;
+}
+
+.soldOut2 {
+  display: none;
+}
+
+.soldOut .soldOut2 {
+  display: block;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #483b6c;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.read-more:hover {
+  background-color: #555;
+}
+
+/* Responsive Grid */
+@media screen and (min-width: 500px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+  }
 }
 
 /***** produkliste *******/
