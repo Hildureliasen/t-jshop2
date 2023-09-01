@@ -286,3 +286,56 @@ main :not(.category) {
   justify-content: center;
   gap: 5%;
 }
+
+/************ burger ***********/
+/* burger menuuuu */
+.burger {
+  display: none;
+}
+
+.linje {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .burger {
+    display: block;
+    cursor: pointer;
+    margin-top: 2%;
+    margin-right: 6%;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* .productliste_grid{
+    gap: 2%;
+  } */
+
+}
+  /* .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 32px;
+    right: 0px;
+    width: 150px;
+    transition: transform 0.3s ease-in-out;
+  } */
+
+  /* .nav-links.active {
+    display: flex;
+    transform: translateY(0);
+  }
+
